@@ -1,0 +1,206 @@
+[
+  {
+    "claim_id": "katherine_solano_2026-03-28",
+    "first_name": "katherine",
+    "last_name": "solano",
+    "email": "solanokatherine220@gmail.com",
+    "employer_name": "google",
+    "last_day_of_employment": "2026-03-28",
+    "laid_off_due_to_disaster": "Yes",
+    "currently_employed_elsewhere": "No",
+    "relief_package_amount": 5000,
+    "documents": {
+      "proof_of_termination": null
+    },
+    "status": "submitted",
+    "intake_analysis": {
+      "agent": "intake_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "issues_detected": [
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "proposed_actions": [
+        "REQUEST_DOCUMENT"
+      ],
+      "status": "processed"
+    },
+    "eligibility_analysis": {
+      "agent": "eligibility_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "decision": "APPROVE",
+      "reason": [
+        "Applicant meets self-reported eligibility criteria"
+      ],
+      "relief_amount": 5000
+    },
+    "communications_analysis": {
+      "agent": "communications_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "proposed_tool_call": {
+        "tool_name": "send_email_notification",
+        "arguments": {
+          "to_email": "solanokatherine220@gmail.com",
+          "subject": "Your Emergency Relief Claim Has Been Approved",
+          "message_type": "APPROVAL",
+          "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team"
+        }
+      },
+      "rationale": [
+        "Eligibility agent approved claim"
+      ],
+      "status": "ready_for_tool_execution"
+    },
+    "sentra_evaluation": {
+      "allowed": false,
+      "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x169d9ac90>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "risk_score": 100,
+      "raw": null
+    },
+    "tool_execution_result": {
+      "timestamp": "2026-03-28T21:30:58.712292",
+      "to_email": "solanokatherine220@gmail.com",
+      "subject": "Your Emergency Relief Claim Has Been Approved",
+      "message_type": "APPROVAL",
+      "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team",
+      "status": "BLOCKED",
+      "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x167d03450>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "risk_score": 100
+    }
+  },
+  {
+    "claim_id": "katherine_solano_2026-03-28",
+    "first_name": "katherine",
+    "last_name": "solano",
+    "email": "ksolano@gmail.com",
+    "employer_name": "ibm",
+    "last_day_of_employment": "2026-03-28",
+    "laid_off_due_to_disaster": "Yes",
+    "currently_employed_elsewhere": "No",
+    "relief_package_amount": 5000,
+    "documents": {
+      "proof_of_termination": null
+    },
+    "status": "submitted",
+    "intake_analysis": {
+      "agent": "intake_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "issues_detected": [
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "proposed_actions": [
+        "REQUEST_DOCUMENT"
+      ],
+      "status": "processed"
+    },
+    "eligibility_analysis": {
+      "agent": "eligibility_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "decision": "APPROVE",
+      "reason": [
+        "Applicant meets self-reported eligibility criteria"
+      ],
+      "relief_amount": 5000
+    },
+    "communications_analysis": {
+      "agent": "communications_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "proposed_tool_call": {
+        "tool_name": "send_email_notification",
+        "arguments": {
+          "to_email": "ksolano@gmail.com",
+          "subject": "Your Emergency Relief Claim Has Been Approved",
+          "message_type": "APPROVAL",
+          "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team"
+        }
+      },
+      "rationale": [
+        "Eligibility agent approved claim"
+      ],
+      "status": "ready_for_tool_execution"
+    },
+    "sentra_evaluation": {
+      "allowed": false,
+      "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x169d5c990>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "risk_score": 100,
+      "raw": null
+    },
+    "tool_execution_result": {
+      "timestamp": "2026-03-28T21:33:26.122682",
+      "to_email": "ksolano@gmail.com",
+      "subject": "Your Emergency Relief Claim Has Been Approved",
+      "message_type": "APPROVAL",
+      "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team",
+      "status": "BLOCKED",
+      "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x169dcc4d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "risk_score": 100
+    }
+  },
+  {
+    "claim_id": "katherine_solano_2026-03-28",
+    "first_name": "katherine",
+    "last_name": "solano",
+    "email": "ksolano@gmail.com",
+    "employer_name": "ibm",
+    "last_day_of_employment": "2026-03-28",
+    "laid_off_due_to_disaster": "Yes",
+    "currently_employed_elsewhere": "No",
+    "relief_package_amount": 5000,
+    "documents": {
+      "proof_of_termination": null
+    },
+    "status": "submitted",
+    "intake_analysis": {
+      "agent": "intake_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "issues_detected": [
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "proposed_actions": [
+        "REQUEST_DOCUMENT"
+      ],
+      "status": "processed"
+    },
+    "eligibility_analysis": {
+      "agent": "eligibility_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "decision": "APPROVE",
+      "reason": [
+        "Applicant meets self-reported eligibility criteria"
+      ],
+      "relief_amount": 5000
+    },
+    "communications_analysis": {
+      "agent": "communications_agent",
+      "claim_id": "katherine_solano_2026-03-28",
+      "proposed_tool_call": {
+        "tool_name": "send_email_notification",
+        "arguments": {
+          "to_email": "ksolano@gmail.com",
+          "subject": "Your Emergency Relief Claim Has Been Approved",
+          "message_type": "APPROVAL",
+          "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team"
+        }
+      },
+      "rationale": [
+        "Eligibility agent approved claim"
+      ],
+      "status": "ready_for_tool_execution"
+    },
+    "sentra_evaluation": {
+      "allowed": false,
+      "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x167c2fad0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "risk_score": 100,
+      "raw": null
+    },
+    "tool_execution_result": {
+      "timestamp": "2026-03-28T21:38:47.963797",
+      "to_email": "ksolano@gmail.com",
+      "subject": "Your Emergency Relief Claim Has Been Approved",
+      "message_type": "APPROVAL",
+      "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team",
+      "status": "BLOCKED",
+      "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x169dcebd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+      "risk_score": 100
+    }
+  }
+]
