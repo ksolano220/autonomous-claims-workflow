@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2026-03-28T21:30:58.712292",
+    "to_email": "solanokatherine220@gmail.com",
+    "subject": "Your Emergency Relief Claim Has Been Approved",
+    "message_type": "APPROVAL",
+    "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team",
+    "status": "BLOCKED",
+    "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x167d03450>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "risk_score": 100
+  },
+  {
+    "timestamp": "2026-03-28T21:33:26.122682",
+    "to_email": "ksolano@gmail.com",
+    "subject": "Your Emergency Relief Claim Has Been Approved",
+    "message_type": "APPROVAL",
+    "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team",
+    "status": "BLOCKED",
+    "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x169dcc4d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "risk_score": 100
+  },
+  {
+    "timestamp": "2026-03-28T21:38:47.963797",
+    "to_email": "ksolano@gmail.com",
+    "subject": "Your Emergency Relief Claim Has Been Approved",
+    "message_type": "APPROVAL",
+    "body": "Hello katherine solano,\n\nYour emergency unemployment relief claim has been approved for a $5,000 relief package.\n\nTo complete processing, please reply with your mailing address and payment instructions.\n\nSincerely,\nRelief Claims Team",
+    "status": "BLOCKED",
+    "reason": "Sentra error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /evaluate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x169dcebd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "risk_score": 100
+  }
+]
