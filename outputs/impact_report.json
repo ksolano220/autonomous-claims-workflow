@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-04-08T07:03:31.564055",
+  "model": "ibm/granite-3-8b-instruct",
+  "total_claims": 10,
+  "claims": [
+    {
+      "claim_id": "demo_valid_001",
+      "applicant": "Maria Torres",
+      "has_proof": true,
+      "intake_issues": [],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "APPROVE",
+      "granite_reason": [
+        "The applicant was laid off due to a declared disaster.",
+        "The applicant is not currently employed elsewhere."
+      ],
+      "granite_risk_factors": [],
+      "sentra_allowed": true,
+      "sentra_reason": "Approval notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": true,
+      "naive_sentra_reason": "Approval notification allowed."
+    },
+    {
+      "claim_id": "demo_missing_proof_002",
+      "applicant": "James Carter",
+      "has_proof": false,
+      "intake_issues": [
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "PENDING",
+      "granite_reason": [
+        "Missing proof of termination"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent claim"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "General notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": false,
+      "naive_sentra_reason": "Approval notification blocked because required verification documents are missing."
+    },
+    {
+      "claim_id": "demo_employed_003",
+      "applicant": "Priya Nair",
+      "has_proof": true,
+      "intake_issues": [
+        "EMPLOYMENT_CONFLICT"
+      ],
+      "rule_based_decision": "DENY",
+      "granite_decision": "DENY",
+      "granite_reason": [
+        "Applicant is currently employed elsewhere",
+        "Intake issues detected"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent claim"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "Rejection notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": true,
+      "naive_sentra_reason": "Rejection notification allowed."
+    },
+    {
+      "claim_id": "demo_not_disaster_004",
+      "applicant": "Andre Williams",
+      "has_proof": true,
+      "intake_issues": [
+        "NOT_DISASTER_LAYOFF"
+      ],
+      "rule_based_decision": "DENY",
+      "granite_decision": "DENY",
+      "granite_reason": [
+        "Applicant was not laid off due to a declared disaster"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent claim"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "Rejection notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": true,
+      "naive_sentra_reason": "Rejection notification allowed."
+    },
+    {
+      "claim_id": "demo_missing_proof_005",
+      "applicant": "Sofia Reyes",
+      "has_proof": false,
+      "intake_issues": [
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "PENDING",
+      "granite_reason": [
+        "Missing proof of termination"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent claim"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "General notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": false,
+      "naive_sentra_reason": "Approval notification blocked because required verification documents are missing."
+    },
+    {
+      "claim_id": "demo_valid_006",
+      "applicant": "David Kim",
+      "has_proof": true,
+      "intake_issues": [],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "APPROVE",
+      "granite_reason": [
+        "The applicant was laid off due to a declared disaster.",
+        "The applicant is not currently employed elsewhere."
+      ],
+      "granite_risk_factors": [],
+      "sentra_allowed": true,
+      "sentra_reason": "Approval notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": true,
+      "naive_sentra_reason": "Approval notification allowed."
+    },
+    {
+      "claim_id": "demo_missing_identity_007",
+      "applicant": "Johnson",
+      "has_proof": false,
+      "intake_issues": [
+        "MISSING_IDENTITY",
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "PENDING",
+      "granite_reason": [
+        "Missing identity verification and proof of termination"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent activity"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "General notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": false,
+      "naive_sentra_reason": "Agent shut down after 3 blocked attempts. Cumulative risk remains 0/100."
+    },
+    {
+      "claim_id": "demo_valid_008",
+      "applicant": "Elena Vasquez",
+      "has_proof": true,
+      "intake_issues": [],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "APPROVE",
+      "granite_reason": [
+        "The applicant was laid off due to a declared disaster.",
+        "The applicant is not currently employed elsewhere."
+      ],
+      "granite_risk_factors": [],
+      "sentra_allowed": true,
+      "sentra_reason": "Approval notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": false,
+      "naive_sentra_reason": "Agent is already shut down."
+    },
+    {
+      "claim_id": "demo_conflict_009",
+      "applicant": "Marcus Brown",
+      "has_proof": false,
+      "intake_issues": [
+        "MISSING_TERMINATION_PROOF",
+        "EMPLOYMENT_CONFLICT"
+      ],
+      "rule_based_decision": "DENY",
+      "granite_decision": "DENY",
+      "granite_reason": [
+        "Applicant is currently employed elsewhere",
+        "Missing proof of termination"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent claim"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "Rejection notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": false,
+      "naive_sentra_reason": "Agent is already shut down."
+    },
+    {
+      "claim_id": "demo_missing_proof_010",
+      "applicant": "Aisha Patel",
+      "has_proof": false,
+      "intake_issues": [
+        "MISSING_TERMINATION_PROOF"
+      ],
+      "rule_based_decision": "APPROVE",
+      "granite_decision": "PENDING",
+      "granite_reason": [
+        "Missing proof of termination"
+      ],
+      "granite_risk_factors": [
+        "Potential fraudulent claim"
+      ],
+      "sentra_allowed": true,
+      "sentra_reason": "General notification allowed.",
+      "sentra_risk_score": 0,
+      "naive_sentra_allowed": false,
+      "naive_sentra_reason": "Agent is already shut down."
+    }
+  ]
+}
