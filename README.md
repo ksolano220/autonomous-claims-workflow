@@ -6,6 +6,8 @@ This project intentionally demonstrates how autonomous agents can trigger unsafe
 
 **Live demo:** [view on Streamlit](https://ksolano-claims.streamlit.app/)
 
+![Demo dashboard](docs/demo.png)
+
 The hosted demo walks through three recorded scenarios end-to-end: a valid claim, an unsafe approval attempt (blocked), and an authority drift case (blocked with `threat_type: AUTHORITY_DRIFT`). No API keys required, no live IBM calls. Every agent output is a recorded snapshot.
 
 ---
