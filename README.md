@@ -2,7 +2,7 @@
 
 Multi-agent AI system for public service emergency relief claims, powered by **IBM watsonx.ai** and **IBM Granite** models.
 
-This project intentionally demonstrates how autonomous agents can trigger unsafe actions — and how runtime control (Sentra) prevents them.
+This project intentionally demonstrates how autonomous agents can trigger unsafe actions, and how runtime control (Sentra) prevents them.
 
 ---
 
@@ -10,11 +10,11 @@ This project intentionally demonstrates how autonomous agents can trigger unsafe
 
 This system simulates a high-stakes emergency relief workflow where applicants submit claims for a $5,000 unemployment relief package following a natural disaster.
 
-Three AI agents — each powered by IBM Granite (granite-3-8b-instruct) via watsonx.ai — collaborate to process claims:
+Three AI agents, each powered by IBM Granite (granite-3-8b-instruct) via watsonx.ai, collaborate to process claims:
 
-1. **Intake Agent** — analyzes claim data, flags missing documents and inconsistencies
-2. **Eligibility Agent** — evaluates whether the claim qualifies, with risk assessment
-3. **Communications Agent** — drafts personalized email notifications based on the decision
+1. **Intake Agent**. Analyzes claim data, flags missing documents and inconsistencies
+2. **Eligibility Agent**. Evaluates whether the claim qualifies, with risk assessment
+3. **Communications Agent**. Drafts personalized email notifications based on the decision
 
 All agent reasoning flows through IBM watsonx.ai. Each agent sends structured prompts to Granite and parses the model's JSON responses to drive workflow decisions.
 
@@ -47,7 +47,7 @@ Without runtime control, this results in:
 - a policy violation in a high-risk government workflow
 - fraud exposure at scale
 
-This failure scenario is intentional — it demonstrates why autonomous systems need runtime enforcement.
+This failure scenario is intentional. It demonstrates why autonomous systems need runtime enforcement.
 
 ---
 
@@ -55,9 +55,9 @@ This failure scenario is intentional — it demonstrates why autonomous systems 
 
 ```
 User submits claim via Streamlit portal
-  → Intake Agent (Granite) — flags missing documents
-  → Eligibility Agent (Granite) — evaluates criteria + risk factors
-  → Communications Agent (Granite) — drafts personalized email
+  → Intake Agent (Granite): flags missing documents
+  → Eligibility Agent (Granite): evaluates criteria + risk factors
+  → Communications Agent (Granite): drafts personalized email
   → Tool call: send_email_notification
   → Sentra evaluates the proposed action
   → Action is ALLOWED or BLOCKED based on policy
