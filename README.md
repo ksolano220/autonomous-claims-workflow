@@ -2,7 +2,11 @@
 
 Multi-agent AI system for public service emergency relief claims, powered by **IBM watsonx.ai** and **IBM Granite** models.
 
-This project intentionally demonstrates how autonomous agents can trigger unsafe actions, and how runtime control (Sentra) prevents them.
+This project intentionally demonstrates how autonomous agents can trigger unsafe actions, and how runtime control ([Sentra](https://github.com/ksolano220/sentra)) prevents them.
+
+**Live demo:** [view on Streamlit](https://ksolano-claims.streamlit.app/)
+
+The hosted demo walks through three recorded scenarios end-to-end: a valid claim, an unsafe approval attempt (blocked), and an authority drift case (blocked with `threat_type: AUTHORITY_DRIFT`). No API keys required, no live IBM calls. Every agent output is a recorded snapshot.
 
 ---
 
