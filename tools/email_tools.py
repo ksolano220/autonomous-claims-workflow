@@ -1,28 +1,24 @@
 import os
 import json
 from datetime import datetime
-from utils.sentra_client import evaluate_with_sentra
 
 EMAIL_LOG_PATH = "data/email_log.json"
 
 
 def send_email_notification(
-    claim_data: dict,
     to_email: str,
     subject: str,
     message_type: str,
-    body: str
+    body: str,
+    evaluation: dict,
 ) -> dict:
     """
-    Sends email only if approved by Sentra.
-    Otherwise blocks execution and logs the blocked action.
-    """
+    Executes the email tool call gated by a Sentra evaluation.
 
-    evaluation = evaluate_with_sentra(
-        claim_data=claim_data,
-        tool_name="send_email_notification",
-        tool_args={"message_type": message_type}
-    )
+    The orchestrator (portal/demo) is responsible for evaluating the
+    proposed action with Sentra and passing the result here. This keeps
+    the policy decision in one place and prevents double-evaluation.
+    """
 
     if not evaluation["allowed"]:
         blocked_record = {

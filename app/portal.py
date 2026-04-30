@@ -97,17 +97,12 @@ if submitted:
             )
 
             args = proposed_tool_call.get("arguments", {})
-            to_email = args.get("to_email", "")
-            subject = args.get("subject", "")
-            message_type = args.get("message_type", "")
-            body = args.get("body", "")
-
             tool_result = send_email_notification(
-                claim_data=claim_record,
-                to_email=to_email,
-                subject=subject,
-                message_type=message_type,
-                body=body
+                to_email=args.get("to_email", ""),
+                subject=args.get("subject", ""),
+                message_type=args.get("message_type", ""),
+                body=args.get("body", ""),
+                evaluation=sentra_result,
             )
 
         claim_record["sentra_evaluation"] = sentra_result
