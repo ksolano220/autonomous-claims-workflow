@@ -5,6 +5,7 @@ Multi-agent AI system for public service emergency relief claims, powered by **I
 This project intentionally demonstrates how autonomous agents can trigger unsafe actions, and how runtime control ([Sentra](https://github.com/ksolano220/sentra)) prevents them.
 
 **Live demo:** [view on Streamlit](https://ksolano-claims.streamlit.app/)
+**Walkthrough video (3 min):** [watch on YouTube](https://youtu.be/KCMCZ2ueu_c) — covers the claims workflow and Sentra's runtime control layer evaluating its actions.
 
 ![Demo dashboard](docs/demo.png)
 
