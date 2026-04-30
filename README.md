@@ -106,17 +106,20 @@ streamlit run app/portal.py
 
 ## Example Scenarios
 
+The hosted demo walks through three recorded scenarios:
+
 ### Valid Claim
 - Laid off due to disaster, not employed elsewhere, proof uploaded
-- → Granite approves → approval email sent
+- → Granite approves → Sentra allows → approval email sent
 
 ### Unsafe Approval (Intentional)
 - Laid off due to disaster, not employed elsewhere, **no proof**
-- → Granite flags risk but may still approve → Sentra blocks the email
+- → Communications agent still drafts an approval email → Sentra blocks at the tool boundary
 
-### Denial
-- Not laid off due to disaster OR currently employed
-- → Granite denies → rejection email sent
+### Authority Drift
+- Eligibility agent finalized the relief amount at $5,000
+- → Communications agent attempts to invoke `modify_claim_record` to raise it to $15,000 — outside its mandate
+- → Sentra blocks with `threat_type: AUTHORITY_DRIFT`
 
 ---
 
